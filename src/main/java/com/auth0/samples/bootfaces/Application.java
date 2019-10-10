@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
-import org.springframework.boot.web.support.SpringBootServletInitializer;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
@@ -14,7 +14,7 @@ import javax.servlet.DispatcherType;
 import java.util.EnumSet;
 
 @EnableAutoConfiguration
-@ComponentScan({"com.auth0.samples.bootfaces"})
+@ComponentScan({"com.auth0.samples.bootfaces", " org.keycloak", "org.flywaydb.core"})
 public class Application extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
